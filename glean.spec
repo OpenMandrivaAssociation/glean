@@ -11,6 +11,7 @@ URL: http://glean.sourceforge.net
 Source: glean-%{cvsversion}.tar.bz2
 License: MIT
 Packager: Gustavo Pichorim Boiko <boiko@mandriva.com> 
+BuildRoot: %{_tmppath}/%{name}-root
 
 %if %mdkversion >= 200700
 BuildRequires: GL-devel
