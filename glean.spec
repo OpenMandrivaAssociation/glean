@@ -19,8 +19,8 @@ BuildRequires: libmesaglu-devel
 BuildRequires: libmesaglut-devel
 %else
 BuildRequires: libxorg-x11-devel
-BuildRequires: mesaglu-devel
-BuildRequires: mesaglut-devel
+BuildRequires: libMesaGLU-devel
+BuildRequires: libMesaglut-devel
 %endif
 BuildRequires: libtiff-devel
 
