@@ -32,19 +32,19 @@ differences between them.
 
 Who should care about glean? 
  - Anyone who buys or reviews graphics cards. glean gives you the ability to 
-   compare performance, features, and image quality of different graphics cards. 
-   Since the source code is freely available, you can customize glean to add 
-   tests for the things that are most important to you. 
+   compare performance, features, and image quality of different graphics
+   cards.  Since the source code is freely available, you can customize glean
+   to add tests for the things that are most important to you. 
 
- - Software developers. With glean you can learn which features really work for 
-   a given combination of hardware and driver. You can also find the timing for 
+ - Software developers. With glean you can learn which features really work for
+   a given combination of hardware and driver. You can also find the timing for
    basic drawing operations, mode changes, texture downloads, etc. so that you 
    can maximize the performance of your application. 
 
- - OpenGL driver developers. glean can increase your confidence that your driver 
-   software is correct and efficient. It also allows you to compare a new release 
-   to a previous release, to make sure that there are no regressions in quality 
-   or performance.
+ - OpenGL driver developers. glean can increase your confidence that your
+   driver software is correct and efficient. It also allows you to compare a
+   new release to a previous release, to make sure that there are no
+   regressions in quality or performance.
 
 %prep
 %setup -q -n %{name}-%{cvsversion}
