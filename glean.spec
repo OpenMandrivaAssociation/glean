@@ -1,16 +1,13 @@
-%define cvsversion 20061128
+%define cvsversion 20100209
 Name: glean
 Version: 1.1
 Release: %mkrel 2.cvs%{cvsversion}
-Summary: A suite of tools for evaluating the quality of an OpenGL implementation 
+Summary: A suite of tools for evaluating the quality of an OpenGL implementation
 Group: System/X11
 URL: http://glean.sourceforge.net
-# CVS snapshot
-# cvs -z3 -d:pserver:anonymous@glean.cvs.sourceforge.net:/cvsroot/glean co -d glean-$(date +%Y%m%d) glean
-# tar jcf glean-$(date +%Y%m%d).tar.bz2 glean-$(date +%Y%m%d)
+# git: git://glean.git.sourceforge.net/gitroot/glean/glean
 Source: glean-%{cvsversion}.tar.bz2
 License: MIT
-Packager: Gustavo Pichorim Boiko <boiko@mandriva.com> 
 BuildRoot: %{_tmppath}/%{name}-root
 
 %if %mdkversion >= 200700
@@ -30,16 +27,16 @@ implementation and diagnosing any problems that are discovered. glean also
 has the ability to compare two OpenGL implementations and highlight the
 differences between them.
 
-Who should care about glean? 
- - Anyone who buys or reviews graphics cards. glean gives you the ability to 
+Who should care about glean?
+ - Anyone who buys or reviews graphics cards. glean gives you the ability to
    compare performance, features, and image quality of different graphics
    cards.  Since the source code is freely available, you can customize glean
-   to add tests for the things that are most important to you. 
+   to add tests for the things that are most important to you.
 
  - Software developers. With glean you can learn which features really work for
    a given combination of hardware and driver. You can also find the timing for
-   basic drawing operations, mode changes, texture downloads, etc. so that you 
-   can maximize the performance of your application. 
+   basic drawing operations, mode changes, texture downloads, etc. so that you
+   can maximize the performance of your application.
 
  - OpenGL driver developers. glean can increase your confidence that your
    driver software is correct and efficient. It also allows you to compare a
@@ -53,8 +50,9 @@ Who should care about glean?
 GLEAN_ROOT=`pwd`
 export GLEAN_ROOT
 
-# (boiko) glean uses a different way for compiling its sources, so we have to 
+# (boiko) glean uses a different way for compiling its sources, so we have to
 #         use make install here
+#         see here: http://glean.sourceforge.net/buildgnu.html
 pushd src
 make install
 popd
