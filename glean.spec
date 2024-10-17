@@ -4,7 +4,7 @@ Version: 1.1
 Release: %mkrel 2.cvs%{cvsversion}
 Summary: A suite of tools for evaluating the quality of an OpenGL implementation
 Group: System/X11
-URL: http://glean.sourceforge.net
+URL: https://glean.sourceforge.net
 # git: git://glean.git.sourceforge.net/gitroot/glean/glean
 Source: glean-%{cvsversion}.tar.bz2
 License: MIT
