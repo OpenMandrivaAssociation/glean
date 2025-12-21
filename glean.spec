@@ -11,6 +11,7 @@ License: MIT
 BuildRoot: %{_tmppath}/%{name}-root
 
 %if %mdkversion >= 200700
+BuildRequires:	make
 BuildRequires: GL-devel
 BuildRequires: libmesaglu-devel
 BuildRequires: libmesaglut-devel
