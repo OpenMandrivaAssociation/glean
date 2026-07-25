@@ -1,7 +1,7 @@
 %define cvsversion 20100209
 Name: glean
 Version: 1.1
-Release: %mkrel 2.cvs%{cvsversion}
+Release: 2.cvs%{cvsversion}.1
 Summary: A suite of tools for evaluating the quality of an OpenGL implementation
 Group: System/X11
 URL: https://glean.sourceforge.net
